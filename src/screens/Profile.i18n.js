@@ -1,0 +1,128 @@
+/* Строки панели профиля. Названия тарифов приходят техническими кодами,
+   поэтому лежат здесь отдельными ключами planXxx. */
+
+export default {
+  ru: {
+    accountFallback: 'Аккаунт',
+    profile: 'Профиль',
+    close: 'Закрыть',
+
+    loading: 'Загружаем профиль…',
+    failed: 'Профиль не загрузился',
+    retry: 'Повторить',
+    stale: 'Данные могли устареть: {err}',
+
+    badgeOn: 'Подписка активна',
+    badgeOff: 'Подписки нет',
+    demoAccess: 'Демо-доступ',
+    validUntil: 'Действует до {date}',
+    noExpiry: 'Срок не ограничен',
+    noSub: 'Подписка не оформлена',
+
+    chars: 'Символы',
+    unlimited: 'Безлимит',
+    charsOf: '{left} из {limit}',
+    spent30: 'Расход за 30 дней',
+    charsUnit: '{n} симв.',
+    invited: 'Приглашено',
+    invitedWithPaid: '{total} · из них платных: {paid}',
+
+    theme: 'Тема оформления',
+    themeDark: 'Тёмная',
+    themeLight: 'Светлая',
+    language: 'Язык интерфейса',
+
+    openBot: 'Открыть бота',
+    logoutMenu: 'Выйти из аккаунта',
+    logoutTitle: 'Выйти из аккаунта?',
+    logoutSub: 'Ключ доступа будет удалён с этого компьютера. Задачи в очереди продолжат выполняться на сервере.',
+    logoutAct: 'Выйти',
+
+    version: 'Версия {v}',
+    versionUnknown: 'неизвестна',
+    keyLine: 'Ключ: {label}',
+
+    planFallback: 'Подписка',
+    planTitle: 'Тариф «{name}»',
+    planApi: 'API-доступ',
+    planFree: 'Бесплатный',
+    planDemo: 'Демо',
+    planTrial: 'Пробный',
+    planStart: 'Старт',
+    planPro: 'Про',
+    planBusiness: 'Бизнес',
+    planUnlimited: 'Безлимитный',
+    planLifetime: 'Бессрочный',
+    planMonthly: 'Месячный',
+    planMonthly500: 'Месячный 500',
+    planMonthly1000: 'Месячный 1000',
+    planMonthly2000: 'Месячный 2000',
+    planMonthly3000: 'Месячный 3000',
+    planMonthly5000: 'Месячный 5000',
+    planMonthly10000: 'Месячный 10000',
+    planQuarterly: 'Квартальный',
+    planYearly: 'Годовой'
+  },
+
+  uz: {
+    accountFallback: 'Hisob',
+    profile: 'Profil',
+    close: 'Yopish',
+
+    loading: 'Profil yuklanyapti…',
+    failed: 'Profil yuklanmadi',
+    retry: 'Qayta urinish',
+    stale: 'Ma’lumotlar eskirgan bo‘lishi mumkin: {err}',
+
+    badgeOn: 'Obuna faol',
+    badgeOff: 'Obuna yo‘q',
+    demoAccess: 'Demo kirish',
+    validUntil: '{date} gacha amal qiladi',
+    noExpiry: 'Muddati cheklanmagan',
+    noSub: 'Obuna rasmiylashtirilmagan',
+
+    chars: 'Belgilar',
+    unlimited: 'Cheksiz',
+    charsOf: '{limit} tadan {left} ta',
+    spent30: '30 kunlik sarf',
+    charsUnit: '{n} belgi',
+    invited: 'Taklif qilingan',
+    invitedWithPaid: '{total} · shundan pullik: {paid}',
+
+    theme: 'Ko‘rinish mavzusi',
+    themeDark: 'Tungi',
+    themeLight: 'Kunduzgi',
+    language: 'Interfeys tili',
+
+    openBot: 'Botni ochish',
+    logoutMenu: 'Hisobdan chiqish',
+    logoutTitle: 'Hisobdan chiqasizmi?',
+    logoutSub: 'Kirish kaliti shu kompyuterdan o‘chiriladi. Navbatdagi vazifalar serverda bajarilishda davom etadi.',
+    logoutAct: 'Chiqish',
+
+    version: 'Versiya {v}',
+    versionUnknown: 'noma’lum',
+    keyLine: 'Kalit: {label}',
+
+    planFallback: 'Obuna',
+    planTitle: '«{name}» tarifi',
+    planApi: 'API kirish',
+    planFree: 'Bepul',
+    planDemo: 'Demo',
+    planTrial: 'Sinov',
+    planStart: 'Start',
+    planPro: 'Pro',
+    planBusiness: 'Biznes',
+    planUnlimited: 'Cheksiz',
+    planLifetime: 'Muddatsiz',
+    planMonthly: 'Oylik',
+    planMonthly500: 'Oylik 500',
+    planMonthly1000: 'Oylik 1000',
+    planMonthly2000: 'Oylik 2000',
+    planMonthly3000: 'Oylik 3000',
+    planMonthly5000: 'Oylik 5000',
+    planMonthly10000: 'Oylik 10000',
+    planQuarterly: 'Choraklik',
+    planYearly: 'Yillik'
+  }
+};

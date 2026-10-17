@@ -1,0 +1,77 @@
+.shumdublaj-btn {
+  width: auto !important;
+  min-width: 34px;
+  padding: 0 8px !important;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: #fff;
+  opacity: 0.85;
+  vertical-align: top;
+}
+
+.shumdublaj-btn:hover { opacity: 1; }
+
+.shumdublaj-btn .shumdublaj-label {
+  display: inline-block;
+  line-height: 48px;
+}
+
+/* Запасной вариант: кнопка поверх видео, если в панель управления встать не вышло */
+.shumdublaj-btn.shumdublaj-overlay {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 60;
+  height: 34px;
+  min-width: 42px;
+  border-radius: 17px;
+  background: rgba(16, 16, 20, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.shumdublaj-btn.shumdublaj-overlay:hover { background: rgba(32, 32, 38, 0.95); }
+
+.shumdublaj-btn.shumdublaj-overlay .shumdublaj-label { line-height: 32px; }
+
+.shumdublaj-btn.active .shumdublaj-label { color: #ffd24a; }
+
+.shumdublaj-btn.shumdublaj-overlay.active {
+  border-color: #ffd24a;
+  box-shadow: 0 0 0 1px rgba(255, 210, 74, 0.35);
+}
+
+.shumdublaj-btn.loading .shumdublaj-label {
+  color: #9ecbff;
+  animation: shumdublaj-pulse 1.1s ease-in-out infinite;
+}
+
+@keyframes shumdublaj-pulse {
+  0%, 100% { opacity: 0.45; }
+  50% { opacity: 1; }
+}
+
+#shumdublaj-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 88px;
+  transform: translateX(-50%) translateY(12px);
+  max-width: 70vw;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: rgba(16, 16, 20, 0.94);
+  color: #fff;
+  font: 500 14px/1.35 Roboto, Arial, sans-serif;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  z-index: 2147483000;
+}
+
+#shumdublaj-toast.visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}

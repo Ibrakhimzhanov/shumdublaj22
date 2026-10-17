@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShumDublaj</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="brand">
+      <img src="brand/eagle-gold.svg" alt="" class="brand-mark">
+      <div>
+        <h1>ShumDublaj</h1>
+        <p>YouTube, endi o'zbekcha</p>
+      </div>
+      <span class="version" id="version">0.9.3</span>
+    </header>
+
+    <section id="loading" class="state loading-state" aria-live="polite">
+      <span class="spinner"></span>
+      <p>Tekshirilmoqda...</p>
+    </section>
+
+    <section id="offline" class="state" hidden>
+      <div class="status-icon">!</div>
+      <h2>Server bilan aloqa yo'q</h2>
+      <p>Internetni tekshiring va qayta urinib ko'ring.</p>
+      <button id="retry" class="button primary" type="button">Qayta tekshirish</button>
+    </section>
+
+    <section id="auth" class="state" hidden>
+      <div class="auth-intro">
+        <h2>Kirish</h2>
+        <p>Sotib olgan profilingiz bilan kiring. Login va parolni sotuvchi beradi.</p>
+      </div>
+      <!-- Это не form: браузер не должен предлагать сохранить пароль -->
+      <div id="login-form">
+        <label>
+          <span>Login</span>
+          <input id="login-name" type="text" placeholder="vipuser01" autocomplete="off"
+                 autocapitalize="off" autocorrect="off" spellcheck="false">
+        </label>
+        <label>
+          <span>Parol</span>
+          <input id="login-password" type="password" placeholder="Parolingiz" autocomplete="off"
+                 autocapitalize="off" autocorrect="off" spellcheck="false">
+        </label>
+        <p class="form-error" id="login-error" role="alert"></p>
+        <button id="login-submit" class="button primary" type="button">Kirish</button>
+      </div>
+      <p class="welcome-credit">Profil yo'qmi? <strong>Sotuvchiga murojaat qiling</strong></p>
+    </section>
+
+    <section id="ready" class="state profile-state" hidden>
+      <div class="identity">
+        <div class="avatar" id="avatar">S</div>
+        <div class="identity-copy">
+          <h2 id="user-name">Foydalanuvchi</h2>
+          <p id="user-login">login</p>
+        </div>
+        <span class="plan" id="user-plan">FREE</span>
+      </div>
+
+      <div class="balance">
+        <div>
+          <span class="eyebrow">Kreditlar</span>
+          <strong id="credits">0</strong>
+        </div>
+        <div class="balance-mark">●</div>
+      </div>
+
+      <div class="capabilities">
+        <div class="section-title">
+          <h3>Imkoniyatlar</h3>
+          <span id="server-state">server tayyor</span>
+        </div>
+        <ul id="capability-list"></ul>
+      </div>
+
+      <div class="profile-actions">
+        <button id="open-youtube" class="button primary" type="button">YouTube'ni ochish</button>
+        <button id="logout" class="button quiet" type="button">Chiqish</button>
+      </div>
+    </section>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

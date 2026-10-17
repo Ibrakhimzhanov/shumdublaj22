@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">ShumDublaj app icon</title>
+  <desc id="desc">Gold ShumTube eagle on a dark rounded square</desc>
+  <rect x="28" y="28" width="968" height="968" rx="220" fill="#08090A"/>
+  <rect x="34" y="34" width="956" height="956" rx="214" fill="none" stroke="#5C481B" stroke-width="12"/>
+  <image href="eagle-gold.svg" x="138" y="119" width="748" height="790"/>
+</svg>

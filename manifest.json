@@ -1,0 +1,70 @@
+{
+  "manifest_version": 3,
+  "name": "ShumDublaj | YouTube o'zbekcha",
+  "description": "YouTube videolarini o'zbek tiliga tarjima qiladi va tabiiy ovoz bilan dublyaj qiladi.",
+  "version": "0.9.3",
+  "minimum_chrome_version": "127",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://app.shumtuber.uz/*",
+    "https://dublaj.shumtuber.uz/*"
+  ],
+  "icons": {
+    "16": "brand/icon-16.png",
+    "32": "brand/icon-32.png",
+    "48": "brand/icon-48.png",
+    "128": "brand/icon-128.png"
+  },
+  "action": {
+    "default_title": "ShumDublaj profilini ochish",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "brand/icon-16.png",
+      "32": "brand/icon-32.png",
+      "48": "brand/icon-48.png",
+      "128": "brand/icon-128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "brand/*.svg"
+      ],
+      "matches": [
+        "*://*.youtube.com/*"
+      ]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/*"
+      ],
+      "js": [
+        "reader.js"
+      ],
+      "world": "MAIN",
+      "run_at": "document_start",
+      "all_frames": false
+    },
+    {
+      "matches": [
+        "*://*.youtube.com/*"
+      ],
+      "js": [
+        "ui.js",
+        "app.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ]
+}

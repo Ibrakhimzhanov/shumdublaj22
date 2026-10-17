@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 260" role="img" aria-labelledby="title desc">
+  <title id="title">ShumDublaj</title>
+  <desc id="desc">ShumDublaj logo with the gold ShumTube eagle mark</desc>
+  <image href="eagle-gold.svg" x="0" y="0" width="246" height="260"/>
+  <text
+    x="274"
+    y="164"
+    fill="#F7F7F4"
+    font-family="Inter, Arial, Helvetica, sans-serif"
+    font-size="92"
+    font-weight="800"
+    letter-spacing="-4"
+  >Shum<tspan fill="#F2C14E">Dublaj</tspan></text>
+</svg>
